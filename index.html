@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>토론대회 타이머</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="home">
+      <h1>토론대회 방식 선택</h1>
+      <select id="debateStage">
+        <option value="8강">8강</option>
+        <option value="4강">4강</option>
+        <option value="결승">결승</option>
+      </select>
+      <button id="startButton">시작하기</button>
+    </div>
+
+    <div id="timerPage" style="display: none">
+      <header>
+        <h1>토론대회 타이머</h1>
+        <button id="backButton">홈으로</button>
+      </header>
+      <div id="timerContainer">
+        <div class="team" id="proTeam">
+          <h2>찬성</h2>
+          <div class="time" id="proTime">00:00</div>
+          <button id="proPlayPause">▶</button>
+        </div>
+        <div class="center">
+          <button class="debateStage" id="introSpeech">기조연설</button>
+          <button class="debateStage" id="questions">확인질문</button>
+          <button class="debateStage" id="freeDebate">자유토론</button>
+          <button class="debateStage" id="closingSpeech">최종발언</button>
+          <div class="overallTime" id="overallTime">00:00</div>
+          <button id="mainPlayPause">▶</button>
+        </div>
+        <div class="team" id="conTeam">
+          <h2>반대</h2>
+          <div class="time" id="conTime">00:00</div>
+          <button id="conPlayPause">▶</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
